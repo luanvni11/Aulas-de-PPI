@@ -124,3 +124,8 @@ console.log(numbersMap);
 
 console.log(numbers.map((number) => number * 2));
 console.log(numbers.toSorted((a, b) => a - b));
+console.log(numbers.toSorted((a, b) => b - a));
+
+numbers.sort((a, b) => a - b);
+console.log('maior =', numbers[numbers.length - 1]); // maior número
+console.log(numbers[0]); // menor número
