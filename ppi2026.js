@@ -38,21 +38,89 @@ console.log(++x); // incremento antes do retorno do valor
 let isExpression = (true && 5 + 2 * 3 < 10) || false;
 console.log(isExpression);
 
-
 //if...else
 //if (condition) {
-    //condition = verdadeira
+//condition = verdadeira
 
 //} else {
-    //condition = falsa
+//condition = falsa
 
 //}
 
 //template strings
-let labubu =
-`amo programar
+let labubu = `amo programar
 em javascript
 é muito legal!`;
 console.log(labubu);
 
-for (let index=0; index<Array.length; index++) 
+//for (let index=0; index<Array.length; index++) {
+//    const element = array[index];
+//}
+
+//array
+let fruits = ["banana", "orange", "apple", "mango"];
+
+console.log(fruits.lenght); // tamanho
+
+console.log(fruits[0]);
+
+fruits.push("kiwi");
+console.log(fruits);
+
+console.log(fruits.pop()); // remove o último elemento
+console.log(fruits);
+
+console.log(fruits.shift()); // remove o primeiro elemento
+console.log(fruits);
+
+fruits.unshift("lemon"); // adiciona um elemento no início do array
+console.log(fruits);
+
+fruits.splice(2, 0, "kiwi", "blueberry"); // argumento 1 - posição, argumento 2 - quantidade de elementos a remover, argumento 3 - elemento a adicionar
+console.log(fruits);
+
+fruits.splice(2, 1);
+console.log(fruits);
+
+fruits.splice(3, 1, "kiwi");
+console.log(fruits);
+
+let index = fruits.indexOf("kiwi");
+console.log(index);
+
+fruits.splice(index, 1, "apple");
+console.log(fruits);
+
+console.log("sort/reverse");
+fruits.sort(); // ordena o array em ordem alfabética
+console.log(fruits);
+
+//ordem decrscente
+fruits.reverse();
+console.log(fruits);
+
+let fruitsSort = fruits.toSorted();
+console.log(fruits);
+console.log(fruitsSort);
+
+let fruitsReverse = fruits.toReversed();
+console.log(fruits);
+console.log(fruitsReverse);
+
+const numbers = [45, 4, 9, 16, 25];
+const numbers2 = [];
+for (let i = 0; i < numbers.length; i++) {
+  numbers2.push(numbers[i] * 2);
+}
+console.log(numbers);
+console.log(numbers2);
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+
+const numbersMap = numbers.map(myFunction);
+console.log(numbersMap);
+
+console.log(numbers.map((number) => number * 2));
+console.log(numbers.toSorted((a, b) => a - b));
