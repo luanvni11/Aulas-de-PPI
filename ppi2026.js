@@ -298,4 +298,4 @@ const produtosFiltrados = estoque.filter(
 );
 
 console.log(`Produtos da categoria: ${categoriaDesejada}`);
-console.log(produtosFiltrados);
+console.log(produtosFiltrados); 
